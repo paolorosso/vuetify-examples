@@ -5,12 +5,12 @@
 <script>
 export default {
   props: {
-    dialog: { type: Boolean, default: false }
+    dialog: { type: Boolean, required: true, default: false }
   },
 
   methods: {
     close() {
-      this.$emit("chiudi");
+      this.$emit("close");
     }
   },
 
